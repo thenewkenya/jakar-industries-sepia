@@ -3,55 +3,55 @@ import BaseLayout from '../components/BaseLayout.astro';
 ---
 
 <BaseLayout title="Contact Us — Jakar Industries" description="Get in touch with Jakar Industries for mission support and technology inquiries.">
-  <div class="ng-layout">
+  <div class="minimal-layout">
     <!-- Hero Section -->
-    <div class="ng-hero">
-      <video class="ng-hero-video" autoplay loop muted playsinline>
+    <div class="minimal-hero">
+      <video class="minimal-hero-video" autoplay loop muted playsinline>
         <source src="/videos/hero-contact.mp4" type="video/mp4" />
       </video>
-      <div class="ng-hero-overlay">
-        <div class="ng-hero-content">
-          <h1 class="ng-h1">Contact Us</h1>
-          <p class="ng-subtitle">Dedicated support for your critical missions</p>
+      <div class="minimal-hero-overlay">
+        <div class="minimal-hero-content">
+          <h1 class="minimal-h1">Contact Us</h1>
+          <p class="minimal-subtitle">Dedicated support for your critical missions</p>
         </div>
       </div>
     </div>
 
-    <!-- Black Breadcrumb Bar -->
-    <div class="ng-breadcrumb-bar">
-      <nav class="ng-breadcrumb">
+    <!-- Dark Breadcrumb Bar -->
+    <div class="minimal-breadcrumb-bar">
+      <nav class="minimal-breadcrumb">
         <ol>
           <li><a href="/">Home</a></li>
-          <li class="ng-sep">></li>
+          <li class="minimal-sep">></li>
           <li class="current">Contact Us</li>
         </ol>
       </nav>
     </div>
 
-    <!-- White Content Area -->
-    <div class="ng-white-content">
-      <div class="ng-container">
-        <div class="ng-main-grid">
-          <div class="ng-main-col">
-            <h2 class="ng-h2">Get in Touch</h2>
-            <p class="ng-p">Have a question about our technology or need support for an ongoing operation? Our team of mission experts is standing by to assist you.</p>
+    <!-- Dark Content Area -->
+    <div class="minimal-dark-content">
+      <div class="minimal-container">
+        <div class="minimal-main-grid">
+          <div class="minimal-main-col">
+            <h2 class="minimal-h2">Get in Touch</h2>
+            <p class="minimal-p">Have a question about our technology or need support for an ongoing operation? Our team of mission experts is standing by to assist you.</p>
             
-            <form class="ng-form">
-              <div class="ng-form-row">
-                <div class="ng-form-group">
+            <form class="minimal-form">
+              <div class="minimal-form-row">
+                <div class="minimal-form-group">
                   <label for="name">Full Name</label>
                   <input type="text" id="name" name="name" required placeholder="John Doe" />
                 </div>
-                <div class="ng-form-group">
+                <div class="minimal-form-group">
                   <label for="email">Work Email</label>
                   <input type="email" id="email" name="email" required placeholder="john@organization.com" />
                 </div>
               </div>
-              <div class="ng-form-group">
+              <div class="minimal-form-group">
                 <label for="organization">Organization</label>
                 <input type="text" id="organization" name="organization" required placeholder="Department / Agency / Company" />
               </div>
-              <div class="ng-form-group">
+              <div class="minimal-form-group">
                 <label for="subject">Subject</label>
                 <select id="subject" name="subject">
                   <option value="general">General Inquiry</option>
@@ -60,49 +60,53 @@ import BaseLayout from '../components/BaseLayout.astro';
                   <option value="partnership">Strategic Partnership</option>
                 </select>
               </div>
-              <div class="ng-form-group">
+              <div class="minimal-form-group">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="6" required placeholder="How can we help your mission?"></textarea>
               </div>
-              <button type="submit" class="ng-form-button">Submit Request</button>
+              <button type="submit" class="minimal-form-button">Submit Request</button>
             </form>
           </div>
           
-          <aside class="ng-side-col">
-            <div class="ng-sidebar-card">
-              <h3 class="ng-h3-small">Global Headquarters</h3>
-              <p class="ng-p-small">
+          <aside class="minimal-side-col">
+            <div class="minimal-sidebar-card">
+              <h3 class="minimal-h3">Headquarters</h3>
+              <p class="minimal-p-side">
                 <strong>Jakar Industries</strong><br />
                 Innovation Square, Pentagon City<br />
                 Arlington, VA 22202<br />
                 United States
               </p>
               
-              <h3 class="ng-h3-small" style="margin-top: 40px;">Mission Support</h3>
-              <p class="ng-p-small">
-                <strong>24/7 Operations:</strong> +1 (800) 555-0199<br />
-                <strong>Email:</strong> support@jakarindustries.com
+              <div class="minimal-divider"></div>
+
+              <h3 class="minimal-h3">Mission Support</h3>
+              <p class="minimal-p-side">
+                <strong>24/7 Operations:</strong><br />
+                <span class="minimal-white-text">+1 (800) 555-0199</span><br /><br />
+                <strong>Email:</strong><br />
+                <span class="minimal-white-text">support@jakarindustries.com</span>
               </p>
             </div>
 
-            <div class="ng-urgent-box">
-              <h3 class="ng-h3-small">Urgent Inquiry?</h3>
-              <p class="ng-p-small">For active mission-critical support, please use the 24/7 operations line for immediate assistance.</p>
+            <div class="minimal-urgent-box">
+              <h3 class="minimal-h3-small">Urgent?</h3>
+              <p class="minimal-p-small">For active mission-critical support, please use our priority 24/7 line.</p>
             </div>
           </aside>
         </div>
 
         <!-- FAQ Section -->
-        <div class="ng-faq-section">
-          <h2 class="ng-h2">Frequently Asked Questions</h2>
-          <div class="ng-faq-grid">
-            <div class="ng-faq-item">
-              <h4 class="ng-h4">Do you provide custom engineering?</h4>
-              <p class="ng-p-small">Yes, we specialize in adapting our core technologies to meet specific operational requirements and environmental constraints.</p>
+        <div class="minimal-faq-section">
+          <h2 class="minimal-h2">FAQs</h2>
+          <div class="minimal-faq-grid">
+            <div class="minimal-faq-item">
+              <h4 class="minimal-h4">Do you provide custom engineering?</h4>
+              <p class="minimal-p-small">Yes, we specialize in adapting our core technologies to meet specific operational requirements and environmental constraints.</p>
             </div>
-            <div class="ng-faq-item">
-              <h4 class="ng-h4">How do I request a demo?</h4>
-              <p class="ng-p-small">Demonstrations can be requested via the contact form. Please specify your organization and the technology platform of interest.</p>
+            <div class="minimal-faq-item">
+              <h4 class="minimal-h4">How do I request a demo?</h4>
+              <p class="minimal-p-small">Demonstrations can be requested via the contact form. Please specify your organization and technology platform of interest.</p>
             </div>
           </div>
         </div>
@@ -112,27 +116,27 @@ import BaseLayout from '../components/BaseLayout.astro';
 </BaseLayout>
 
 <style>
-  /* 1-to-1 Northrop Grumman Constants */
+  /* Dribbble-Inspired Minimalist Dark Constants */
   :root {
-    --ng-blue: #00269A;
-    --ng-dark-navy: #002554;
-    --ng-black: #000000;
-    --ng-header-grey: #222222;
-    --ng-body-grey: #444444;
-    --ng-breadcrumb-link: #E9EBED;
-    --ng-breadcrumb-active: #7C878E;
-    --ng-font: "Inter", Arial, sans-serif;
-    --ng-container-width: 1140px;
+    --minimal-black: #000000;
+    --minimal-near-black: #0a0a0a;
+    --minimal-accent: #0044ff;
+    --minimal-white: #ffffff;
+    --minimal-gray: #A0A0A0;
+    --minimal-border: rgba(255, 255, 255, 0.1);
+    --minimal-font: "Inter", -apple-system, sans-serif;
+    --minimal-container: 1200px;
   }
 
-  .ng-layout {
-    background: var(--ng-black);
-    font-family: var(--ng-font);
+  .minimal-layout {
+    background: var(--minimal-black);
+    color: var(--minimal-white);
+    font-family: var(--minimal-font);
     -webkit-font-smoothing: antialiased;
   }
 
   /* Hero Section */
-  .ng-hero {
+  .minimal-hero {
     position: relative;
     height: 70vh;
     min-height: 550px;
@@ -141,70 +145,64 @@ import BaseLayout from '../components/BaseLayout.astro';
     overflow: hidden;
   }
 
-  .ng-hero-video {
+  .minimal-hero-video {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.5;
   }
 
-  .ng-hero-overlay {
+  .minimal-hero-overlay {
     position: relative;
     z-index: 5;
     width: 100%;
-    max-width: var(--ng-container-width);
+    max-width: var(--minimal-container);
     margin: 0 auto;
     padding: 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
   }
 
-  /* Exact 1-for-1 NG Overlay Styles */
-  .ng-hero-content {
-    background: rgba(0, 0, 0, 0.5); /* 50% Opacity */
-    backdrop-filter: blur(5px);    /* 5px Blur */
-    -webkit-backdrop-filter: blur(5px);
-    padding: 40px;                 /* 40px Padding */
-    color: #fff;
-    border: none;
-    text-align: left;
-    max-width: 1140px;
-    width: auto;
+  .minimal-hero-content {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 60px;
+    max-width: 800px;
+    border: 1px solid var(--minimal-border);
   }
 
-  .ng-h1 {
-    font-size: 52px;
-    font-weight: 700;
+  .minimal-h1 {
+    font-size: clamp(48px, 8vw, 72px);
+    font-weight: 800;
     margin: 0 0 20px;
-    line-height: 1.1;
+    line-height: 1;
+    letter-spacing: -0.02em;
   }
 
-  .ng-subtitle {
-    font-size: 24px;
+  .minimal-subtitle {
+    font-size: clamp(18px, 2vw, 24px);
     margin: 0;
     line-height: 1.4;
     font-weight: 400;
-    opacity: 0.95;
+    color: var(--minimal-gray);
   }
 
   /* Breadcrumb Bar */
-  .ng-breadcrumb-bar {
-    background: var(--ng-black);
-    height: 70px;
-    display: flex;
-    align-items: center;
+  .minimal-breadcrumb-bar {
+    background: var(--minimal-near-black);
+    border-bottom: 1px solid var(--minimal-border);
+    padding: 20px 0;
   }
 
-  .ng-breadcrumb {
+  .minimal-breadcrumb {
     width: 100%;
-    max-width: var(--ng-container-width);
+    max-width: var(--minimal-container);
     margin: 0 auto;
     padding: 0 40px;
   }
 
-  .ng-breadcrumb ol {
+  .minimal-breadcrumb ol {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -213,174 +211,193 @@ import BaseLayout from '../components/BaseLayout.astro';
     gap: 12px;
   }
 
-  .ng-breadcrumb li {
-    font-size: 19.8px;
-    font-weight: 500;
-    color: var(--ng-breadcrumb-active);
+  .minimal-breadcrumb li {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--minimal-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
   }
 
-  .ng-breadcrumb a {
-    color: var(--ng-breadcrumb-link);
-    text-decoration: none;
+  .minimal-breadcrumb a { color: var(--minimal-white); text-decoration: none; }
+  .minimal-sep { opacity: 0.3; }
+
+  /* Content Area */
+  .minimal-dark-content {
+    background: var(--minimal-black);
+    padding: 120px 0;
   }
 
-  .ng-sep {
-    color: var(--ng-breadcrumb-active);
-    font-size: 16px;
-  }
-
-  /* Main Content Area */
-  .ng-white-content {
-    background: #fff;
-    color: var(--ng-body-grey);
-    padding: 80px 0;
-  }
-
-  .ng-container {
-    max-width: var(--ng-container-width);
+  .minimal-container {
+    max-width: var(--minimal-container);
     margin: 0 auto;
     padding: 0 40px;
   }
 
-  .ng-main-grid {
+  .minimal-main-grid {
     display: grid;
-    grid-template-columns: 1fr 340px;
-    gap: 80px;
-    margin-bottom: 80px;
+    grid-template-columns: 1fr 380px;
+    gap: 100px;
+    margin-bottom: 120px;
   }
 
-  .ng-h2 {
-    font-size: 44px;
+  .minimal-h2 {
+    font-size: 40px;
     font-weight: 700;
-    color: var(--ng-header-grey);
     margin: 0 0 30px;
     line-height: 1.2;
+    letter-spacing: -0.01em;
   }
 
-  .ng-p {
+  .minimal-p {
     font-size: 18px;
-    line-height: 1.75;
-    margin-bottom: 30px;
+    line-height: 1.8;
+    color: var(--minimal-gray);
+    margin-bottom: 40px;
   }
 
-  .ng-form {
+  .minimal-form {
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
 
-  .ng-form-row {
+  .minimal-form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
 
-  .ng-form-group {
+  .minimal-form-group {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
 
-  .ng-form-group label {
-    font-size: 14px;
+  .minimal-form-group label {
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--ng-header-grey);
+    color: var(--minimal-white);
     letter-spacing: 0.1em;
   }
 
-  .ng-form-group input,
-  .ng-form-group select,
-  .ng-form-group textarea {
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 2px;
+  .minimal-form-group input,
+  .minimal-form-group select,
+  .minimal-form-group textarea {
+    background: var(--minimal-near-black);
+    padding: 18px;
+    border: 1px solid var(--minimal-border);
     font-family: inherit;
     font-size: 16px;
+    color: var(--minimal-white);
+    transition: all 0.3s;
   }
 
-  .ng-form-group input:focus {
+  .minimal-form-group input:focus,
+  .minimal-form-group select:focus,
+  .minimal-form-group textarea:focus {
     outline: none;
-    border-color: var(--ng-blue);
+    border-color: var(--minimal-accent);
+    box-shadow: 0 0 0 1px var(--minimal-accent);
   }
 
-  .ng-form-button {
-    background: var(--ng-blue);
-    color: #fff;
-    padding: 20px 45px;
+  .minimal-form-button {
+    background: var(--minimal-white);
+    color: var(--minimal-black);
+    padding: 20px 50px;
     border: none;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 14px;
     width: fit-content;
-    transition: background 0.3s;
+    transition: all 0.3s;
+    margin-top: 20px;
   }
 
-  .ng-sidebar-card {
-    background: #F2F4F5;
+  .minimal-form-button:hover {
+    background: var(--minimal-accent);
+    color: var(--minimal-white);
+  }
+
+  .minimal-sidebar-card {
+    border: 1px solid var(--minimal-border);
     padding: 40px;
-    border-top: 5px solid var(--ng-blue);
   }
 
-  .ng-h3-small {
-    font-size: 20px;
+  .minimal-h3 {
+    font-size: 22px;
     font-weight: 700;
-    color: var(--ng-header-grey);
-    margin-bottom: 20px;
-    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: -0.01em;
   }
 
-  .ng-p-small {
+  .minimal-p-side {
     font-size: 16px;
+    line-height: 1.7;
+    color: var(--minimal-gray);
+    margin-bottom: 0;
+  }
+
+  .minimal-white-text { color: var(--minimal-white); font-weight: 600; }
+
+  .minimal-divider {
+    height: 1px;
+    background: var(--minimal-border);
+    margin: 40px 0;
+  }
+
+  .minimal-urgent-box {
+    margin-top: 30px;
+    background: rgba(208, 2, 27, 0.05); /* Very subtle red glow */
+    border: 1px solid rgba(208, 2, 27, 0.2);
+    padding: 40px;
+  }
+
+  .minimal-h3-small {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #D0021B; /* Priority Red */
+  }
+
+  .minimal-p-small {
+    font-size: 15px;
     line-height: 1.6;
+    color: var(--minimal-gray);
     margin: 0;
   }
 
-  .ng-urgent-box {
-    margin-top: 30px;
-    background: #002244;
-    color: #fff;
-    padding: 40px;
-    border-left: 5px solid #D0021B; /* Alarm red */
-  }
-
   /* FAQ */
-  .ng-faq-section {
-    padding-top: 80px;
-    border-top: 1px solid #E5E5E5;
+  .minimal-faq-section {
+    padding-top: 100px;
+    border-top: 1px solid var(--minimal-border);
   }
 
-  .ng-faq-grid {
+  .minimal-faq-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-    margin-top: 40px;
+    gap: 80px;
+    margin-top: 60px;
   }
 
-  .ng-h4 {
+  .minimal-h4 {
     font-size: 20px;
     font-weight: 700;
-    color: var(--ng-header-grey);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: 1024px) {
-    .ng-main-grid {
-      grid-template-columns: 1fr;
-    }
-    .ng-form-row {
-      grid-template-columns: 1fr;
-    }
-    .ng-faq-grid {
-      grid-template-columns: 1fr;
-    }
+    .minimal-main-grid { grid-template-columns: 1fr; }
+    .minimal-form-row { grid-template-columns: 1fr; }
+    .minimal-faq-grid { grid-template-columns: 1fr; gap: 40px; }
   }
 
   @media (max-width: 768px) {
-    .ng-h1 { font-size: 38px; }
-    .ng-h2 { font-size: 32px; }
-    .ng-hero-content { padding: 40px; }
+    .minimal-h1 { font-size: 40px; }
+    .minimal-h2 { font-size: 32px; }
+    .minimal-hero-content { padding: 40px; }
   }
 </style>
