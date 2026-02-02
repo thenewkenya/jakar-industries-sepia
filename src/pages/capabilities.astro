@@ -2,283 +2,343 @@
 import BaseLayout from '../components/BaseLayout.astro';
 ---
 
-<BaseLayout title="Capabilities — Jakar Industries" description="Advanced technologies engineered for mission-critical performance.">
-  <article class="article-page">
-    <div class="article-hero">
-      <video class="article-hero-video" autoplay loop muted playsinline>
-        <source src="/videos/hero-jet.mp4" type="video/mp4" />
+<BaseLayout title="Capabilities — Jakar Industries" description="Explore our advanced mission technology and strategic platform capabilities.">
+  <div class="ng-layout">
+    <!-- Hero Section -->
+    <div class="ng-hero">
+      <video class="ng-hero-video" autoplay loop muted playsinline>
+        <source src="/videos/hero-capabilities.mp4" type="video/mp4" />
       </video>
-      <div class="article-hero-overlay"></div>
-      <div class="article-hero-content">
-        <h1 class="article-title">Our Capabilities</h1>
-        <p class="article-subtitle">Advanced technologies for mission success</p>
+      <div class="ng-hero-overlay">
+        <div class="ng-hero-content">
+          <h1 class="ng-h1">Capabilities</h1>
+          <p class="ng-subtitle">Advanced engineering for the modern mission</p>
+        </div>
       </div>
     </div>
 
-    <div class="breadcrumb">
-      <nav>
-        <a href="/">Home</a>
-        <span class="breadcrumb-separator">›</span>
-        <span class="breadcrumb-current">Capabilities</span>
+    <!-- Black Breadcrumb Bar -->
+    <div class="ng-breadcrumb-bar">
+      <nav class="ng-breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li class="ng-sep">></li>
+          <li class="current">Capabilities</li>
+        </ol>
       </nav>
     </div>
 
-    <div class="article-content">
-      <div class="article-body">
-        <section class="article-section">
-          <p class="intro-text">Built on decades of defense innovation, our capabilities span sensor integration, secure communications, autonomous systems, and advanced data analytics.</p>
-        </section>
+    <!-- White Content Area -->
+    <div class="ng-white-content">
+      <div class="ng-container">
+        <div class="ng-intro-section">
+          <h2 class="ng-h2">Mission Excellence</h2>
+          <p class="ng-p">Jakar Industries provides high-end technological advantages across multiple domains. Our focus on rapid innovation and mission-proven reliability ensures that our partners stay ahead of emerging threats through superior engineering and operational expertise.</p>
+        </div>
 
-        <section class="article-section">
-          <h2>Sensor Integration</h2>
-          <p>Multi-spectrum sensor fusion systems that deliver unified situational awareness across military and public safety operations. Real-time data processing with latency under 100ms.</p>
-          <p><strong>Key Technologies:</strong> LIDAR and Radar Fusion, Multi-spectrum Imaging, Real-time Data Processing, Distributed Architecture</p>
-        </section>
-
-        <section class="article-section">
-          <h2>Secure Communications</h2>
-          <p>Military-grade encrypted communication systems with end-to-end security. NATO and NIST compliance standards, interoperable with legacy systems.</p>
-          <p><strong>Key Technologies:</strong> Military-Grade Encryption, Quantum-Ready Architecture, Legacy System Interop, Resilient Networks</p>
-        </section>
-
-        <section class="article-section">
-          <h2>Autonomous Systems</h2>
-          <p>Next-generation autonomous platforms with advanced AI decision-making. Unmanned systems for reconnaissance, logistics, and combat support.</p>
-          <p><strong>Key Technologies:</strong> AI/ML Integration, Autonomous Navigation, Swarm Coordination, Fail-Safe Operation</p>
-        </section>
-
-        <section class="article-section">
-          <h2>Data Analytics</h2>
-          <p>Advanced analytics platforms that transform raw operational data into actionable intelligence. Predictive modeling and pattern recognition at scale.</p>
-          <p><strong>Key Technologies:</strong> Big Data Processing, Predictive Analytics, Pattern Recognition, Real-time Dashboards</p>
-        </section>
-
-        <section class="article-section article-highlight">
-          <h3>Strategic Platforms</h3>
-          
-          <div class="platform-item">
-            <h4>SENTINEL Defense Platform</h4>
-            <p>Integrated command and control system for military operations. Real-time tactical awareness, threat assessment, and response coordination across distributed forces.</p>
-            <p><strong>Specs:</strong> 500+ User Nodes | Sub-100ms Latency | 99.99% Uptime | NATO Certified</p>
+        <div class="ng-capabilities-grid">
+          <div class="ng-cap-item">
+            <h3 class="ng-h3">Advanced Sensors</h3>
+            <p class="ng-p">Multispectral sensing systems providing real-time intelligence in degraded environments. Our sensor suites are designed for maximum situational awareness and seamless data integration.</p>
+            <ul class="ng-list">
+              <li><strong class="ng-blue-text">Imaging:</strong> Thermal & IR high-res systems</li>
+              <li><strong class="ng-blue-text">LIDAR:</strong> Advanced terrain mapping</li>
+              <li><strong class="ng-blue-text">ESM:</strong> Electronic support measures</li>
+            </ul>
           </div>
 
-          <div class="platform-item">
-            <h4>FIRST RESPONDER Coordination System</h4>
-            <p>Purpose-built platform for emergency services and public safety agencies. Unified dispatch, resource management, and inter-agency coordination.</p>
-            <p><strong>Specs:</strong> 500+ Agency Support | Mobile Optimized | Disaster Resilient | FIPS 140-2</p>
+          <div class="ng-cap-item">
+            <h3 class="ng-h3">Autonomous Systems</h3>
+            <p class="ng-p">Next-generation drones and ground robotic systems capable of autonomous navigation, threat detection, and collaborative operations in contested areas.</p>
+            <ul class="ng-list">
+              <li><strong class="ng-blue-text">AI Swarms:</strong> Collaborative unit intelligence</li>
+              <li><strong class="ng-blue-text">Edge AI:</strong> Real-time processing power</li>
+              <li><strong class="ng-blue-text">Endurance:</strong> Ultra-long mission logistics</li>
+            </ul>
           </div>
+        </div>
 
-          <div class="platform-item">
-            <h4>NEXUS Analytics Engine</h4>
-            <p>Enterprise-scale data analytics and intelligence platform. Processes petabytes of operational data to deliver predictive insights and strategic advantage.</p>
-            <p><strong>Specs:</strong> Petabyte Scale | AI-Powered Insights | Scalable Architecture | Real-time Processing</p>
+        <!-- Platforms Section -->
+        <div class="ng-platforms-section">
+          <h2 class="ng-h2">Strategic Platforms</h2>
+          <div class="ng-platform-row">
+            <div class="ng-platform-card">
+              <div class="ng-platform-info">
+                <h3 class="ng-h3">Aegis Drone Fleet</h3>
+                <p class="ng-p">The Aegis platform represents the pinnacle of aerial surveillance. Capable of 24-hour continuous flight, these systems provide persistent monitoring for border security and disaster response.</p>
+              </div>
+            </div>
+            <div class="ng-platform-card">
+              <div class="ng-platform-info">
+                <h3 class="ng-h3">Titan Ground Unit</h3>
+                <p class="ng-p">A modular, heavy-duty robotic platform designed for hazardous material handling and extreme terrain navigation. Titan goes where humans cannot.</p>
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
 
-        <section class="article-section">
-          <h2>Certifications & Compliance</h2>
-          <p>We maintain the highest standards of security and compliance: NATO Certified, NIST 800-53, FIPS 140-2, ISO 27001, ITAR Compliant, and Common Criteria.</p>
-        </section>
+        <!-- Final CTA Box -->
+        <div class="ng-cta-section">
+          <div class="ng-cta-card">
+            <h2 class="ng-h2">Ready to Transform Your Mission?</h2>
+            <p class="ng-p">Learn how our advanced capabilities can give you the operational advantage.</p>
+            <a href="/contact" class="ng-cta-button">Contact Our Experts</a>
+          </div>
+        </div>
       </div>
     </div>
-  </article>
+  </div>
 </BaseLayout>
 
 <style>
-  .article-page {
-    background-color: #000;
-    color: var(--color-white);
-    min-height: 100vh;
+  /* 1-to-1 Northrop Grumman Constants */
+  :root {
+    --ng-blue: #00269A;
+    --ng-dark-navy: #002554;
+    --ng-black: #000000;
+    --ng-header-grey: #222222;
+    --ng-body-grey: #444444;
+    --ng-breadcrumb-link: #E9EBED;
+    --ng-breadcrumb-active: #7C878E;
+    --ng-font: "Inter", Arial, sans-serif;
+    --ng-container-width: 1140px;
   }
 
-  .article-hero {
+  .ng-layout {
+    background: var(--ng-black);
+    font-family: var(--ng-font);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Hero Section */
+  .ng-hero {
     position: relative;
-    height: 60vh;
-    min-height: 400px;
+    height: 70vh;
+    min-height: 550px;
     display: flex;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
   }
 
-  .article-hero-video {
+  .ng-hero-video {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 0;
   }
 
-  .article-hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.7) 100%
-    );
-    z-index: 1;
-  }
-
-  .article-hero-content {
+  .ng-hero-overlay {
     position: relative;
-    z-index: 2;
-    max-width: 800px;
-    padding: 0 var(--space-lg);
-    text-align: left;
-  }
-
-  .article-title {
-    font-family: var(--font-display);
-    font-size: var(--fs-max);
-    font-weight: 900;
-    margin-bottom: var(--space-md);
-    text-transform: uppercase;
-    letter-spacing: -0.01em;
-  }
-
-  .article-subtitle {
-    font-size: var(--fs-500);
-    color: rgba(255, 255, 255, 0.9);
-    font-weight: 400;
-    line-height: 1.5;
-  }
-
-  .breadcrumb {
-    background-color: #000;
-    padding: var(--space-lg) 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  .breadcrumb nav {
-    max-width: 1400px;
+    z-index: 5;
+    width: 100%;
+    max-width: var(--ng-container-width);
     margin: 0 auto;
-    padding: 0 var(--space-lg);
+    padding: 0 40px;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9375rem;
-    font-weight: 400;
+    justify-content: flex-start;
   }
 
-  .breadcrumb a {
-    color: rgba(255, 255, 255, 0.65);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .breadcrumb a:hover {
+  /* Exact 1-for-1 NG Overlay Styles */
+  .ng-hero-content {
+    background: rgba(0, 0, 0, 0.5); /* 50% Opacity */
+    backdrop-filter: blur(5px);    /* 5px Blur */
+    -webkit-backdrop-filter: blur(5px);
+    padding: 40px;                 /* 40px Padding */
     color: #fff;
+    border: none;
+    text-align: left;
+    max-width: 1140px;
+    width: auto;
   }
 
-  .breadcrumb-separator {
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 1rem;
-    margin: 0 0.35rem;
+  .ng-h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: 1.1;
   }
 
-  .breadcrumb-current {
-    color: rgba(255, 255, 255, 0.4);
+  .ng-subtitle {
+    font-size: 24px;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 400;
+    opacity: 0.95;
   }
 
-  .article-content {
-    background-color: #f5f5f5;
-    padding: var(--space-4xl) 0;
+  /* Breadcrumb Bar */
+  .ng-breadcrumb-bar {
+    background: var(--ng-black);
+    height: 70px;
+    display: flex;
+    align-items: center;
   }
 
-  .article-body {
-    max-width: 800px;
+  .ng-breadcrumb {
+    width: 100%;
+    max-width: var(--ng-container-width);
     margin: 0 auto;
-    padding: 0 var(--space-lg);
+    padding: 0 40px;
   }
 
-  .intro-text {
-    font-family: var(--font-sans);
-    font-size: var(--fs-600);
-    line-height: 1.7;
-    color: #222;
+  .ng-breadcrumb ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .ng-breadcrumb li {
+    font-size: 19.8px;
     font-weight: 500;
+    color: var(--ng-breadcrumb-active);
   }
 
-  .article-section {
-    margin-bottom: var(--space-4xl);
+  .ng-breadcrumb a {
+    color: var(--ng-breadcrumb-link);
+    text-decoration: none;
   }
 
-  .article-section h2 {
-    font-family: var(--font-display);
-    font-size: var(--fs-800);
-    margin-bottom: var(--space-lg);
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -0.01em;
-    color: #000;
+  .ng-sep {
+    color: var(--ng-breadcrumb-active);
+    font-size: 16px;
   }
 
-  .article-section h3 {
-    font-family: var(--font-display);
-    font-size: var(--fs-700);
-    margin-bottom: var(--space-md);
+  /* Main Content Area */
+  .ng-white-content {
+    background: #fff;
+    color: var(--ng-body-grey);
+    padding: 80px 0;
+  }
+
+  .ng-container {
+    max-width: var(--ng-container-width);
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .ng-intro-section {
+    margin-bottom: 80px;
+  }
+
+  .ng-h2 {
+    font-size: 44px;
     font-weight: 700;
-    color: #0087ca;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    color: var(--ng-header-grey);
+    margin: 0 0 30px;
+    line-height: 1.2;
   }
 
-  .article-section p {
-    font-family: var(--font-sans);
-    font-size: var(--fs-500);
-    line-height: 1.8;
-    color: #333;
-    margin-bottom: var(--space-lg);
+  .ng-p {
+    font-size: 18px;
+    line-height: 1.75;
+    margin-bottom: 30px;
   }
 
-  .article-highlight {
-    background: rgba(0, 135, 202, 0.08);
-    border-left: 4px solid #0087ca;
-    padding: var(--space-2xl);
-    border-radius: 4px;
+  .ng-capabilities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 80px;
   }
 
-  .platform-item {
-    padding-bottom: var(--space-lg);
-    margin-bottom: var(--space-lg);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  .ng-cap-item {
+    border-top: 1px solid #EDEDED;
+    padding-top: 40px;
   }
 
-  .platform-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
+  .ng-h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--ng-header-grey);
+    margin-bottom: 25px;
   }
 
-  .platform-item h4 {
-    font-family: var(--font-display);
-    font-size: var(--fs-700);
-    color: #0087ca;
-    margin-bottom: var(--space-md);
+  .ng-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0;
+  }
+
+  .ng-list li {
+    font-size: 17px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .ng-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 2px;
+    background: var(--ng-blue);
+  }
+
+  .ng-blue-text {
+    color: var(--ng-blue);
+  }
+
+  /* Platforms Section */
+  .ng-platforms-section {
+    padding: 80px 0;
+    border-top: 1px solid #E5E5E5;
+  }
+
+  .ng-platform-row {
+    display: grid;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .ng-platform-card {
+    background: #F2F4F5;
+    padding: 60px;
+    border-left: 5px solid var(--ng-blue);
+  }
+
+  /* Final CTA */
+  .ng-cta-section {
+    padding: 80px 0 0;
+    text-align: center;
+  }
+
+  .ng-cta-card {
+    background: var(--ng-dark-navy);
+    color: #fff;
+    padding: 80px 40px;
+  }
+
+  .ng-cta-button {
+    display: inline-block;
+    background: var(--ng-blue);
+    color: #fff;
+    padding: 20px 45px;
+    text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 15px;
+    transition: background 0.3s;
+    margin-top: 40px;
   }
 
-  .platform-item p {
-    margin-bottom: 0;
+  @media (max-width: 1024px) {
+    .ng-capabilities-grid {
+      grid-template-columns: 1fr;
+      gap: 60px;
+    }
   }
 
   @media (max-width: 768px) {
-    .article-hero {
-      height: 50vh;
-    }
-
-    .article-content {
-      padding: var(--space-3xl) 0;
-    }
-
-    .article-body {
-      padding: 0 var(--space-md);
-    }
-
-    .article-section {
-      margin-bottom: var(--space-3xl);
-    }
+    .ng-h1 { font-size: 38px; }
+    .ng-h2 { font-size: 32px; }
+    .ng-hero-content { padding: 40px; }
   }
 </style>

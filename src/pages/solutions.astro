@@ -2,250 +2,366 @@
 import BaseLayout from '../components/BaseLayout.astro';
 ---
 
-<BaseLayout title="Markets & Solutions — Jakar Industries" description="Specialized solutions for Defense Operations, First Responders, Systems Support, and Innovation.">
-  <article class="article-page">
-    <div class="article-hero">
-      <video class="article-hero-video" autoplay loop muted playsinline>
-        <source src="/videos/hero-jet.mp4" type="video/mp4" />
+<BaseLayout title="Solutions — Jakar Industries" description="Comprehensive mission solutions for defense, public safety, and innovation.">
+  <div class="ng-layout">
+    <!-- Hero Section -->
+    <div class="ng-hero">
+      <video class="ng-hero-video" autoplay loop muted playsinline>
+        <source src="/videos/hero-contact.mp4" type="video/mp4" />
       </video>
-      <div class="article-hero-overlay"></div>
-      <div class="article-hero-content">
-        <h1 class="article-title">Markets & Solutions</h1>
-        <p class="article-subtitle">Purpose-built technology for every mission domain</p>
+      <div class="ng-hero-overlay">
+        <div class="ng-hero-content">
+          <h1 class="ng-h1">Solutions</h1>
+          <p class="ng-subtitle">Integrated systems for critical operations</p>
+        </div>
       </div>
     </div>
 
-    <div class="breadcrumb">
-      <nav>
-        <a href="/">Home</a>
-        <span class="breadcrumb-separator">›</span>
-        <span class="breadcrumb-current">Markets & Solutions</span>
+    <!-- Black Breadcrumb Bar -->
+    <div class="ng-breadcrumb-bar">
+      <nav class="ng-breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li class="ng-sep">></li>
+          <li class="current">Solutions</li>
+        </ol>
       </nav>
     </div>
 
-    <div class="article-content">
-      <div class="article-body">
-        <section class="article-section">
-          <h2>Defense Operations</h2>
-          <p>Providing elite military forces with the tactical advantage through advanced sensor integration, secure communications, and mission-proven hardware. Our systems are deployed with leading defense organizations worldwide, enabling real-time situational awareness and rapid decision-making in the most demanding combat environments.</p>
-          
-          <p>From special operations units to large-scale military deployments, our defense solutions integrate seamlessly with existing infrastructure while providing next-generation capabilities. Real-time tactical command and control, multi-spectrum sensor fusion, and autonomous system integration work together to create unmatched battlefield superiority.</p>
+    <!-- White Content Area -->
+    <div class="ng-white-content">
+      <div class="ng-container">
+        <div class="ng-intro-section">
+          <h2 class="ng-h2">Operational Impact</h2>
+          <p class="ng-p">We deliver end-to-end solutions that address the most complex challenges in modern security. By integrating hardware, software, and human expertise, we create force multipliers for those on the front lines of defense and public safety.</p>
+        </div>
 
-          <p><strong>Key Capabilities:</strong> Real-time Tactical Command & Control, Multi-spectrum Sensor Fusion, Secure Military Communications, Autonomous System Integration, Advanced Threat Analysis, Mission-Critical Logistics</p>
-        </section>
+        <div class="ng-solutions-grid">
+          <div class="ng-sol-card">
+            <h3 class="ng-h3">Defense Operations</h3>
+            <p class="ng-p">Modernizing the battlefield with intelligent systems that provide superior reconnaissance, target acquisition, and tactical communications in contested environments.</p>
+            <ul class="ng-list">
+              <li><strong class="ng-blue-text">Electronic Warfare:</strong> Spectrum dominance</li>
+              <li><strong class="ng-blue-text">Precision Logistics:</strong> Real-time supply chains</li>
+              <li><strong class="ng-blue-text">Battlefield AI:</strong> Cognitive advantage</li>
+            </ul>
+          </div>
 
-        <section class="article-section">
-          <h2>First Responders</h2>
-          <p>Empowering law enforcement and emergency services with real-time situational awareness and robust network solutions for critical safety missions. Our platforms enable seamless coordination across departments and jurisdictions, improving response times and saving lives.</p>
-          
-          <p>When seconds count, first responders need technology that works flawlessly under pressure. Our unified dispatch systems, real-time resource coordination, and multi-agency interoperability ensure that every emergency response is executed with precision and efficiency.</p>
+          <div class="ng-sol-card">
+            <h3 class="ng-h3">First Responders</h3>
+            <p class="ng-p">Equipping public safety agencies with tools for rapid disaster response, urban search and rescue, and large-scale incident management under extreme conditions.</p>
+            <ul class="ng-list">
+              <li><strong class="ng-blue-text">Robotics:</strong> Search & rescue platforms</li>
+              <li><strong class="ng-blue-text">Detection:</strong> Chemical & radiation sensing</li>
+              <li><strong class="ng-blue-text">Command:</strong> Mobile operational centers</li>
+            </ul>
+          </div>
+        </div>
 
-          <p><strong>Key Capabilities:</strong> Unified Dispatch Systems, Real-time Resource Coordination, Multi-Agency Interoperability, Mobile Command Vehicles, Emergency Network Resilience, Incident Management Platform</p>
-        </section>
+        <!-- Methodology Section -->
+        <div class="ng-method-section">
+          <h2 class="ng-h2">Our Methodology</h2>
+          <div class="ng-method-grid">
+            <div class="ng-method-item">
+              <div class="ng-method-step-num">01</div>
+              <h3 class="ng-h3-small">Mission Analysis</h3>
+              <p class="ng-p-small">Understanding the unique constraints and requirements of your specific operational environment.</p>
+            </div>
+            <div class="ng-method-item">
+              <div class="ng-method-step-num">02</div>
+              <h3 class="ng-h3-small">System Design</h3>
+              <p class="ng-p-small">Developing integrated solutions that leverage the best available technology for the mission.</p>
+            </div>
+            <div class="ng-method-item">
+              <div class="ng-method-step-num">03</div>
+              <h3 class="ng-h3-small">Support</h3>
+              <p class="ng-p-small">Providing full logistics support and ongoing maintenance to ensure mission success.</p>
+            </div>
+          </div>
+        </div>
 
-        <section class="article-section">
-          <h2>Systems Support</h2>
-          <p>End-to-end mission sustainment, including lifecycle management, specialized training, and 24/7 technical logistics for global operations. Our support teams are stationed worldwide and available around the clock to ensure your systems remain operational when it matters most.</p>
-          
-          <p>From preventive maintenance to rapid response deployment, we provide comprehensive support that keeps mission-critical systems running at peak performance. Our field training teams ensure operators are fully prepared to leverage every capability of their systems.</p>
-
-          <p><strong>Key Capabilities:</strong> 24/7 Global Mission Support, Preventive Maintenance Programs, Spare Parts Management, Software Update & Patching, Field Training Teams, Rapid Response Deployment</p>
-        </section>
-
-        <section class="article-section">
-          <h2>Innovation & AI</h2>
-          <p>Pioneering the next frontier of defense technology through autonomous systems, artificial intelligence, and next-generation data analytics. We're investing heavily in emerging technologies to keep our clients ahead of evolving threats and operational demands.</p>
-          
-          <p>Our innovation labs are developing the technologies that will define the next decade of defense operations. From AI-powered decision systems to quantum-ready architectures, we're building the future of mission-critical technology today.</p>
-
-          <p><strong>Key Capabilities:</strong> AI-Powered Decision Systems, Machine Learning Analytics, Autonomous Vehicle Control, Predictive Threat Modeling, Neural Network Integration, Quantum-Ready Architecture</p>
-        </section>
-
-        <section class="article-section article-highlight">
-          <h3>Ready to Transform Your Mission?</h3>
-          <p>Interested in learning more about how our solutions can enhance your operations? Our mission experts are ready to discuss your specific requirements and demonstrate how our technology can provide the tactical advantage your organization needs.</p>
-          
-          <p><a href="/contact" class="inline-link">Connect with an Expert →</a></p>
-        </section>
+        <!-- Final CTA -->
+        <div class="ng-cta-section">
+          <div class="ng-cta-card">
+            <h2 class="ng-h2">Ready for the Future?</h2>
+            <p class="ng-p">Explore how our integrated solutions can transform your operations.</p>
+            <a href="/contact" class="ng-cta-button">Explore Case Studies</a>
+          </div>
+        </div>
       </div>
     </div>
-  </article>
+  </div>
 </BaseLayout>
 
 <style>
-  .article-page {
-    background-color: #000;
-    color: var(--color-white);
-    min-height: 100vh;
+  /* 1-to-1 Northrop Grumman Constants */
+  :root {
+    --ng-blue: #00269A;
+    --ng-dark-navy: #002554;
+    --ng-black: #000000;
+    --ng-header-grey: #222222;
+    --ng-body-grey: #444444;
+    --ng-breadcrumb-link: #E9EBED;
+    --ng-breadcrumb-active: #7C878E;
+    --ng-font: "Inter", Arial, sans-serif;
+    --ng-container-width: 1140px;
   }
 
-  .article-hero {
+  .ng-layout {
+    background: var(--ng-black);
+    font-family: var(--ng-font);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Hero Section */
+  .ng-hero {
     position: relative;
-    height: 60vh;
-    min-height: 400px;
+    height: 70vh;
+    min-height: 550px;
     display: flex;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
   }
 
-  .article-hero-video {
+  .ng-hero-video {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 0;
   }
 
-  .article-hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.7) 100%
-    );
-    z-index: 1;
-  }
-
-  .article-hero-content {
+  .ng-hero-overlay {
     position: relative;
-    z-index: 2;
-    max-width: 800px;
-    padding: 0 var(--space-lg);
-    text-align: left;
-  }
-
-  .article-title {
-    font-family: var(--font-display);
-    font-size: var(--fs-max);
-    font-weight: 900;
-    margin-bottom: var(--space-md);
-    text-transform: uppercase;
-    letter-spacing: -0.01em;
-  }
-
-  .article-subtitle {
-    font-size: var(--fs-500);
-    color: rgba(255, 255, 255, 0.9);
-    font-weight: 400;
-    line-height: 1.5;
-  }
-
-  .breadcrumb {
-    background-color: #000;
-    padding: var(--space-lg) 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  .breadcrumb nav {
-    max-width: 1400px;
+    z-index: 5;
+    width: 100%;
+    max-width: var(--ng-container-width);
     margin: 0 auto;
-    padding: 0 var(--space-lg);
+    padding: 0 40px;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9375rem;
-    font-weight: 400;
+    justify-content: flex-start;
   }
 
-  .breadcrumb a {
-    color: rgba(255, 255, 255, 0.65);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .breadcrumb a:hover {
+  /* Exact 1-for-1 NG Overlay Styles */
+  .ng-hero-content {
+    background: rgba(0, 0, 0, 0.5); /* 50% Opacity */
+    backdrop-filter: blur(5px);    /* 5px Blur */
+    -webkit-backdrop-filter: blur(5px);
+    padding: 40px;                 /* 40px Padding */
     color: #fff;
+    border: none;
+    text-align: left;
+    max-width: 1140px;
+    width: auto;
   }
 
-  .breadcrumb-separator {
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 1rem;
-    margin: 0 0.35rem;
-  }
-
-  .breadcrumb-current {
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  .article-content {
-    background-color: #f5f5f5;
-    padding: var(--space-4xl) 0;
-  }
-
-  .article-body {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 var(--space-lg);
-  }
-
-  .article-section {
-    margin-bottom: var(--space-4xl);
-  }
-
-  .article-section h2 {
-    font-family: var(--font-display);
-    font-size: var(--fs-800);
-    margin-bottom: var(--space-lg);
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -0.01em;
-    color: #000;
-  }
-
-  .article-section h3 {
-    font-family: var(--font-display);
-    font-size: var(--fs-700);
-    margin-bottom: var(--space-md);
+  .ng-h1 {
+    font-size: 52px;
     font-weight: 700;
-    color: #0087ca;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    margin: 0 0 20px;
+    line-height: 1.1;
   }
 
-  .article-section p {
-    font-family: var(--font-sans);
-    font-size: var(--fs-500);
-    line-height: 1.8;
-    color: #333;
-    margin-bottom: var(--space-lg);
+  .ng-subtitle {
+    font-size: 24px;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 400;
+    opacity: 0.95;
   }
 
-  .article-highlight {
-    background: rgba(0, 135, 202, 0.08);
-    border-left: 4px solid #0087ca;
-    padding: var(--space-2xl);
-    border-radius: 4px;
+  /* Breadcrumb Bar */
+  .ng-breadcrumb-bar {
+    background: var(--ng-black);
+    height: 70px;
+    display: flex;
+    align-items: center;
   }
 
-  .inline-link {
-    color: #0087ca;
+  .ng-breadcrumb {
+    width: 100%;
+    max-width: var(--ng-container-width);
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .ng-breadcrumb ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .ng-breadcrumb li {
+    font-size: 19.8px;
+    font-weight: 500;
+    color: var(--ng-breadcrumb-active);
+  }
+
+  .ng-breadcrumb a {
+    color: var(--ng-breadcrumb-link);
     text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
   }
 
-  .inline-link:hover {
-    color: #00a8e8;
+  .ng-sep {
+    color: var(--ng-breadcrumb-active);
+    font-size: 16px;
+  }
+
+  /* Main Content Area */
+  .ng-white-content {
+    background: #fff;
+    color: var(--ng-body-grey);
+    padding: 80px 0;
+  }
+
+  .ng-container {
+    max-width: var(--ng-container-width);
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .ng-intro-section {
+    margin-bottom: 80px;
+  }
+
+  .ng-h2 {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--ng-header-grey);
+    margin: 0 0 30px;
+    line-height: 1.2;
+  }
+
+  .ng-p {
+    font-size: 18px;
+    line-height: 1.75;
+    margin-bottom: 30px;
+  }
+
+  .ng-solutions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 80px;
+  }
+
+  .ng-sol-card {
+    border-top: 1px solid #EDEDED;
+    padding-top: 40px;
+  }
+
+  .ng-h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--ng-header-grey);
+    margin-bottom: 25px;
+  }
+
+  .ng-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0;
+  }
+
+  .ng-list li {
+    font-size: 17px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .ng-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 2px;
+    background: var(--ng-blue);
+  }
+
+  .ng-blue-text {
+    color: var(--ng-blue);
+  }
+
+  /* Methodology */
+  .ng-method-section {
+    background: #F2F4F5;
+    padding: 80px 40px;
+    margin-bottom: 80px;
+  }
+
+  .ng-method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .ng-method-item {
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  }
+
+  .ng-method-step-num {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--ng-blue);
+    margin-bottom: 15px;
+  }
+
+  .ng-h3-small {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ng-header-grey);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  .ng-p-small {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Final CTA */
+  .ng-cta-section {
+    text-align: center;
+  }
+
+  .ng-cta-card {
+    background: var(--ng-dark-navy);
+    color: #fff;
+    padding: 80px 40px;
+  }
+
+  .ng-cta-button {
+    display: inline-block;
+    background: var(--ng-blue);
+    color: #fff;
+    padding: 20px 45px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 15px;
+    transition: background 0.3s;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 1024px) {
+    .ng-solutions-grid { grid-template-columns: 1fr; }
+    .ng-method-grid { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 768px) {
-    .article-hero {
-      height: 50vh;
-    }
-
-    .article-content {
-      padding: var(--space-3xl) 0;
-    }
-
-    .article-body {
-      padding: 0 var(--space-md);
-    }
-
-    .article-section {
-      margin-bottom: var(--space-3xl);
-    }
+    .ng-h1 { font-size: 38px; }
+    .ng-h2 { font-size: 32px; }
+    .ng-hero-content { padding: 40px; }
   }
 </style>

@@ -3,293 +3,371 @@ import BaseLayout from '../components/BaseLayout.astro';
 ---
 
 <BaseLayout title="About — Jakar Industries" description="Learn about Jakar Industries' mission, values, and commitment to defense technology.">
-  <article class="article-page">
-    <div class="article-hero">
-      <video class="article-hero-video" autoplay loop muted playsinline>
-        <source src="/videos/hero-jet.mp4" type="video/mp4" />
+  <div class="ng-layout">
+    <!-- Hero Section -->
+    <div class="ng-hero">
+      <video class="ng-hero-video" autoplay loop muted playsinline>
+        <source src="/videos/hero-about.mp4" type="video/mp4" />
       </video>
-      <div class="article-hero-overlay"></div>
-      <div class="article-hero-content">
-        <h1 class="article-title">About Us</h1>
-        <p class="article-subtitle">Leading the transformation of mission-critical technology</p>
+      <div class="ng-hero-overlay">
+        <div class="ng-hero-content">
+          <h1 class="ng-h1">About Us</h1>
+          <p class="ng-subtitle">Leading the transformation of mission-critical technology</p>
+        </div>
       </div>
     </div>
 
-    <div class="breadcrumb">
-      <nav>
-        <a href="/">Home</a>
-        <span class="breadcrumb-separator">›</span>
-        <span class="breadcrumb-current">About</span>
+    <!-- Black Breadcrumb Bar -->
+    <div class="ng-breadcrumb-bar">
+      <nav class="ng-breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li class="ng-sep">></li>
+          <li class="current">About Us</li>
+        </ol>
       </nav>
     </div>
 
-    <div class="article-content">
-      <div class="article-body">
-        <section class="article-section">
-          <h2>Our Mission</h2>
-          <p>At Jakar Industries, we are dedicated to pioneering innovative technologies that empower military and first responders worldwide. We believe that cutting-edge engineering, unwavering reliability, and deep mission understanding create the foundation for solutions that save lives and advance national security.</p>
-        </section>
-
-        <section class="article-section">
-          <h2>Who We Are</h2>
-          <p>Founded on principles of precision, innovation, and service, Jakar Industries has become a trusted partner for defense and public safety organizations. Our team of engineers, technologists, and mission experts work collaboratively to deliver solutions that meet the most demanding requirements in the world's most challenging environments.</p>
+    <!-- White Content Area -->
+    <div class="ng-white-content">
+      <div class="ng-container">
+        <div class="ng-main-grid">
+          <div class="ng-main-col">
+            <h2 class="ng-h2">Our Mission</h2>
+            <p class="ng-p">At Jakar Industries, we are dedicated to pioneering innovative technologies that empower military and first responders worldwide. We believe that cutting-edge engineering, unwavering reliability, and deep mission understanding create the foundation for solutions that save lives and advance national security.</p>
+            
+            <h2 class="ng-h2">Who We Are</h2>
+            <p class="ng-p">Founded on principles of precision, innovation, and service, Jakar Industries has become a trusted partner for defense and public safety organizations. Our team of engineers, technologists, and mission experts work collaboratively to deliver solutions that meet the most demanding requirements in the world's most challenging environments.</p>
+            <p class="ng-p">We combine decades of defense industry experience with cutting-edge research and development to create systems that perform flawlessly under pressure. From combat zones to disaster areas, our technology enables those who serve to accomplish their missions with confidence.</p>
+          </div>
           
-          <p>We combine decades of defense industry experience with cutting-edge research and development to create systems that perform flawlessly under pressure. From combat zones to disaster areas, our technology enables those who serve to accomplish their missions with confidence.</p>
-        </section>
+          <aside class="ng-side-col">
+            <div class="ng-sidebar-card">
+              <h3 class="ng-h3">Core Values</h3>
+              <ul class="ng-list">
+                <li><strong class="ng-blue-text">Innovation:</strong> Pushing boundaries</li>
+                <li><strong class="ng-blue-text">Reliability:</strong> Mission-proven</li>
+                <li><strong class="ng-blue-text">Service:</strong> Dedicated support</li>
+                <li><strong class="ng-blue-text">Security:</strong> Operational integrity</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
 
-        <section class="article-section article-highlight">
-          <h3>Core Values</h3>
-          <p><strong>Innovation:</strong> Pushing boundaries of what's possible in defense technology</p>
-          <p><strong>Reliability:</strong> Mission-proven performance in the most critical situations</p>
-          <p><strong>Service:</strong> Dedicated support for those who serve our nation</p>
-          <p><strong>Security:</strong> Protecting data and maintaining operational integrity</p>
-        </section>
-
-        <section class="article-section">
-          <h2>By The Numbers</h2>
-          <div class="stats-inline">
-            <div class="stat-item">
-              <strong>25+</strong>
-              <span>Years of Excellence</span>
+        <!-- Section Break / Stats -->
+        <div class="ng-stats-section">
+          <h2 class="ng-h2">By The Numbers</h2>
+          <div class="ng-stats-grid">
+            <div class="ng-stat-card">
+              <strong class="ng-stat-num">25+</strong>
+              <span class="ng-stat-label">Years of Excellence</span>
             </div>
-            <div class="stat-item">
-              <strong>500+</strong>
-              <span>Dedicated Experts</span>
+            <div class="ng-stat-card">
+              <strong class="ng-stat-num">500+</strong>
+              <span class="ng-stat-label">Dedicated Experts</span>
             </div>
-            <div class="stat-item">
-              <strong>50+</strong>
-              <span>Global Partnerships</span>
+            <div class="ng-stat-card">
+              <strong class="ng-stat-num">50+</strong>
+              <span class="ng-stat-label">Global Partnerships</span>
             </div>
-            <div class="stat-item">
-              <strong>1000+</strong>
-              <span>Deployed Systems</span>
+            <div class="ng-stat-card">
+              <strong class="ng-stat-num">1000+</strong>
+              <span class="ng-stat-label">Deployed Systems</span>
             </div>
           </div>
-        </section>
+        </div>
 
-        <section class="article-section">
-          <h2>Leadership</h2>
-          <p>Our leadership team brings decades of combined experience in defense technology, engineering, and strategic innovation.</p>
-          
-          <div class="leadership-inline">
-            <p><strong>Dr. Sarah Mitchell, CEO</strong> — Former Vice President of Advanced Systems at leading defense contractor with 20+ years in aerospace and defense.</p>
-            <p><strong>James Rodriguez, CTO</strong> — Pioneer in autonomous systems and AI integration, with distinguished career in military technology development.</p>
-            <p><strong>Jennifer Chen, COO</strong> — Operations excellence leader specializing in mission-critical logistics and supply chain management.</p>
+        <!-- Leadership -->
+        <div class="ng-leadership-section">
+          <h2 class="ng-h2">Leadership</h2>
+          <div class="ng-leaders-grid">
+            <div class="ng-leader">
+              <strong class="ng-leader-name">Dr. Sarah Mitchell</strong>
+              <span class="ng-leader-title">CEO</span>
+              <p class="ng-p">Former Vice President of Advanced Systems at leading defense contractor with 20+ years experience.</p>
+            </div>
+            <div class="ng-leader">
+              <strong class="ng-leader-name">James Rodriguez</strong>
+              <span class="ng-leader-title">CTO</span>
+              <p class="ng-p">Pioneer in autonomous systems and AI integration, with distinguished career in military technology.</p>
+            </div>
           </div>
-        </section>
-
-        <section class="article-section">
-          <h2>Our Commitment</h2>
-          <p><strong>Security First:</strong> Every product undergoes rigorous security assessments and compliance evaluations to ensure mission integrity.</p>
-          <p><strong>Innovation Pipeline:</strong> We invest 20% of revenue into R&D to stay ahead of emerging threats and technological capabilities.</p>
-          <p><strong>24/7 Support:</strong> Global mission support centers ensure our clients receive rapid response and expert assistance anytime, anywhere.</p>
-          <p><strong>Continuous Training:</strong> Specialized training programs ensure operators maximize capability and mission effectiveness of our systems.</p>
-        </section>
+        </div>
       </div>
     </div>
-  </article>
+  </div>
 </BaseLayout>
 
 <style>
-  .article-page {
-    background-color: #000;
-    color: var(--color-white);
-    min-height: 100vh;
+  /* 1-to-1 Northrop Grumman Constants */
+  :root {
+    --ng-blue: #00269A;
+    --ng-dark-navy: #002554;
+    --ng-black: #000000;
+    --ng-header-grey: #222222;
+    --ng-body-grey: #444444;
+    --ng-breadcrumb-link: #E9EBED;
+    --ng-breadcrumb-active: #7C878E;
+    --ng-font: "Inter", Arial, sans-serif;
+    --ng-container-width: 1140px;
   }
 
-  .article-hero {
+  .ng-layout {
+    background: var(--ng-black);
+    font-family: var(--ng-font);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Hero Section */
+  .ng-hero {
     position: relative;
-    height: 60vh;
-    min-height: 400px;
+    height: 70vh;
+    min-height: 550px;
     display: flex;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
   }
 
-  .article-hero-video {
+  .ng-hero-video {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 0;
   }
 
-  .article-hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.7) 100%
-    );
-    z-index: 1;
-  }
-
-  .article-hero-content {
+  .ng-hero-overlay {
     position: relative;
-    z-index: 2;
-    max-width: 800px;
-    padding: 0 var(--space-lg);
+    z-index: 5;
+    width: 100%;
+    max-width: var(--ng-container-width);
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  /* Exact 1-for-1 NG Overlay Styles */
+  .ng-hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Exact 0.5 Opacity */
+    backdrop-filter: blur(5px);    /* Exact 5px Blur */
+    -webkit-backdrop-filter: blur(5px);
+    padding: 40px;                 /* Exact 40px Padding */
+    max-width: 1140px;             /* Full width within container constraints */
+    width: auto;
+    color: #fff;
+    border: none;                  /* Removed all borders/bars */
     text-align: left;
   }
 
-  .article-title {
-    font-family: var(--font-display);
-    font-size: var(--fs-max);
-    font-weight: 900;
-    margin-bottom: var(--space-md);
-    text-transform: uppercase;
-    letter-spacing: -0.01em;
+  .ng-h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: 1.1;
+    text-transform: none;
   }
 
-  .article-subtitle {
-    font-size: var(--fs-500);
-    color: rgba(255, 255, 255, 0.9);
+  .ng-subtitle {
+    font-size: 24px;
+    margin: 0;
+    line-height: 1.4;
     font-weight: 400;
-    line-height: 1.5;
+    opacity: 0.95;
   }
 
-  .breadcrumb {
-    background-color: #000;
-    padding: var(--space-lg) 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  .breadcrumb nav {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 var(--space-lg);
+  /* Breadcrumb Bar */
+  .ng-breadcrumb-bar {
+    background: var(--ng-black);
+    height: 70px;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9375rem;
-    font-weight: 400;
   }
 
-  .breadcrumb a {
-    color: rgba(255, 255, 255, 0.65);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .breadcrumb a:hover {
-    color: #fff;
-  }
-
-  .breadcrumb-separator {
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 1rem;
-    margin: 0 0.35rem;
-  }
-
-  .breadcrumb-current {
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  .article-content {
-    background-color: #f5f5f5;
-    padding: var(--space-4xl) 0;
-  }
-
-  .article-body {
-    max-width: 800px;
+  .ng-breadcrumb {
+    width: 100%;
+    max-width: var(--ng-container-width);
     margin: 0 auto;
-    padding: 0 var(--space-lg);
+    padding: 0 40px;
   }
 
-  .article-section {
-    margin-bottom: var(--space-4xl);
+  .ng-breadcrumb ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 
-  .article-section h2 {
-    font-family: var(--font-display);
-    font-size: var(--fs-800);
-    margin-bottom: var(--space-lg);
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -0.01em;
-    color: #000;
+  .ng-breadcrumb li {
+    font-size: 19.8px;
+    font-weight: 500;
+    color: var(--ng-breadcrumb-active);
   }
 
-  .article-section h3 {
-    font-family: var(--font-display);
-    font-size: var(--fs-700);
-    margin-bottom: var(--space-md);
+  .ng-breadcrumb a {
+    color: var(--ng-breadcrumb-link);
+    text-decoration: none;
+  }
+
+  .ng-sep {
+    color: var(--ng-breadcrumb-active);
+    font-size: 16px;
+  }
+
+  /* Main Content Area */
+  .ng-white-content {
+    background: #fff;
+    color: var(--ng-body-grey);
+    padding: 80px 0;
+  }
+
+  .ng-container {
+    max-width: var(--ng-container-width);
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .ng-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 80px;
+    margin-bottom: 80px;
+  }
+
+  .ng-h2 {
+    font-size: 44px;
     font-weight: 700;
-    color: #0087ca;
+    color: var(--ng-header-grey);
+    margin: 0 0 30px;
+    line-height: 1.2;
+    text-transform: none;
+  }
+
+  .ng-p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  .ng-sidebar-card {
+    background: #F2F4F5;
+    padding: 40px;
+    border-top: 5px solid var(--ng-blue);
+  }
+
+  .ng-h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--ng-header-grey);
+    margin-bottom: 25px;
+  }
+
+  .ng-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ng-list li {
+    font-size: 17px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .ng-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 2px;
+    background: var(--ng-blue);
+  }
+
+  .ng-blue-text {
+    color: var(--ng-blue);
+  }
+
+  /* Stats Section */
+  .ng-stats-section {
+    padding: 80px 0;
+    border-top: 1px solid #E5E5E5;
+  }
+
+  .ng-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .ng-stat-card {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #F0F0F0;
+  }
+
+  .ng-stat-num {
+    display: block;
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--ng-blue);
+    margin-bottom: 15px;
+  }
+
+  .ng-stat-label {
+    font-weight: 700;
+    font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
   }
 
-  .article-section p {
-    font-family: var(--font-sans);
-    font-size: var(--fs-500);
-    line-height: 1.8;
-    color: #333;
-    margin-bottom: var(--space-lg);
+  /* Leadership */
+  .ng-leadership-section {
+    padding: 80px 0;
+    border-top: 1px solid #E5E5E5;
   }
 
-  .stats-inline {
+  .ng-leaders-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-xl);
-    margin: var(--space-2xl) 0;
+    gap: 60px;
+    margin-top: 40px;
   }
 
-  .stat-item strong {
+  .ng-leader-name {
+    font-size: 24px;
+    color: var(--ng-header-grey);
     display: block;
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 900;
-    color: #0087ca;
-    margin-bottom: var(--space-sm);
+    margin-bottom: 8px;
   }
 
-  .stat-item span {
-    font-size: clamp(0.9rem, 1.5vw, 1rem);
-    color: #666;
+  .ng-leader-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ng-blue);
     text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
     letter-spacing: 0.05em;
   }
 
-  .leadership-inline {
-    border-left: 4px solid #0087ca;
-    padding-left: var(--space-xl);
-    margin: var(--space-2xl) 0;
-  }
-
-  .leadership-inline p {
-    font-style: italic;
-    color: #555;
-  }
-
-  .article-highlight {
-    background: rgba(0, 135, 202, 0.08);
-    border-left: 4px solid #0087ca;
-    padding: var(--space-2xl);
-    border-radius: 4px;
+  @media (max-width: 1024px) {
+    .ng-main-grid {
+      grid-template-columns: 1fr;
+    }
+    .ng-stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   @media (max-width: 768px) {
-    .article-hero {
-      height: 50vh;
-    }
-
-    .article-content {
-      padding: var(--space-3xl) 0;
-    }
-
-    .article-body {
-      padding: 0 var(--space-md);
-    }
-
-    .article-section {
-      margin-bottom: var(--space-3xl);
-    }
-
-    .stats-inline {
-      grid-template-columns: 1fr;
-    }
+    .ng-h1 { font-size: 38px; }
+    .ng-h2 { font-size: 32px; }
+    .ng-hero-content { padding: 40px; }
   }
 </style>
